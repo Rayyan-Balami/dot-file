@@ -32,3 +32,7 @@ app.use(cookieParser());
 app.get("/health", (req, res) => {
   res.status(200).json({ status: "ok" });
 });
+
+// Routes
+import userRouter from "./routes/user.route.js";
+app.use("/api/v1/users", userRouter);

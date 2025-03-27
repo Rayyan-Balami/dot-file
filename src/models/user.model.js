@@ -9,7 +9,6 @@ const userSchema = new Schema(
       required: true,
       unique: true,
       trim: true,
-      minlength: 3,
       index: true,
     },
     email: {
@@ -17,25 +16,21 @@ const userSchema = new Schema(
       required: true,
       unique: true,
       trim: true,
-      minlength: 3,
     },
     fullname: {
       type: String,
       required: true,
       trim: true,
-      minlength: 3,
       index: true,
     },
     avatar: {
       type: String, //cloudinary url
       required: true,
       trim: true,
-      minlength: 3,
     },
     coverImage: {
       type: String, //cloudinary url
       trim: true,
-      minlength: 3,
     },
     watchHistory: [
       {
@@ -47,7 +42,6 @@ const userSchema = new Schema(
       type: String,
       required: true,
       trim: true,
-      minlength: 6,
     },
     refreshToken: {
       type: String,
